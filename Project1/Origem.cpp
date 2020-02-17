@@ -1,4 +1,5 @@
 #include<iostream>
+#include<stdio.h>
 #include<math.h>
 
 using namespace std;
@@ -31,12 +32,12 @@ int main() {
 	resultado = quantidadeTintas24L(valorArea);
 	quantidadeTintas = ceil(resultado);
 	valorTinta = (quantidadeTintas * tinta24L);
-	cout <<  quantidadeTintas << " lata(s) de 24 Litros: " << "R$ " << valorTinta << ::endl;
+	printf("%.0f lata(s) de 24 Litros: R$ %.2f " "\n", quantidadeTintas, valorTinta);
 
 	resultado = quantidadeTintas54L(valorArea);
 	quantidadeTintas = ceil(resultado);
 	valorTinta = (quantidadeTintas * tinta54L);
-	cout << quantidadeTintas << " lata(s) de 5,4 Litros: " << "R$ " << valorTinta << ::endl;
+	printf("%.0f lata(s) de 5,4 Litros: R$ %.2f " "\n", quantidadeTintas, valorTinta);
 
 	resultado = quantidadeTintas24L(valorArea);
 	quantidadeTintas = ceil(valorArea);
@@ -54,14 +55,14 @@ int main() {
 	quantidadeTintas = ceil(resultado);
 	valorTinta = (quantidadeTintas * tinta24L);
 	tinta24L54L += valorTinta;
-	cout << quantidadeTintas << " lata(s) 24 litros e ";
+	printf ("%.0f lata(s) 24 litros e ", quantidadeTintas);
 
 
 	resultado = quantidadeTintas54L(valorArea24Tintas);
 	quantidadeTintas = ceil(resultado);
 	valorTinta = (quantidadeTintas * tinta54L);
 	tinta24L54L += valorTinta;
-	cout << quantidadeTintas << " lata(s) 5,4 litros " << "R$ " << tinta24L54L <<:: endl;
+	printf("%.0f lata(s) 5,4 litros: R$ %.2f \n", quantidadeTintas, tinta24L54L);
 
 	system("pause");
 }
