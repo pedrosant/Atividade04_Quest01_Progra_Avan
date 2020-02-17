@@ -31,12 +31,12 @@ int main() {
 	resultado = quantidadeTintas24L(valorArea);
 	quantidadeTintas = ceil(resultado);
 	valorTinta = (quantidadeTintas * tinta24L);
-	cout <<  quantidadeTintas << " lata(s) de 24 Litros " << valorTinta << "R$"<<::endl;
+	cout <<  quantidadeTintas << " lata(s) de 24 Litros: " << "R$ " << valorTinta << ::endl;
 
 	resultado = quantidadeTintas54L(valorArea);
 	quantidadeTintas = ceil(resultado);
 	valorTinta = (quantidadeTintas * tinta54L);
-	cout << quantidadeTintas << " lata(s) de 5,4 Litros " << valorTinta << "R$" << ::endl;
+	cout << quantidadeTintas << " lata(s) de 5,4 Litros: " << "R$ " << valorTinta << ::endl;
 
 	resultado = quantidadeTintas24L(valorArea);
 	quantidadeTintas = ceil(valorArea);
